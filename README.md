@@ -2,19 +2,22 @@
 
 Simple Pokemon Wiki
 
-## Instalación Virtual Env.
+## Instalación y Activación Virtual Env.
 
 ### Windows
 
 ```bash
-C:\> python -m venv c:\path\to\myenv
+C:\> python -m venv venv <env-name>
 ```
+
+Activar virtual env `./<env-name>/Scripts/activate.bat`
 
 ### Linux
 
 ```bash
 python -m virtualenv .venv
 ```
+Activar virtual env `source .venv/bin/activate`
 
 ## Instalación Dependencias
 
