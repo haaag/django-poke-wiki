@@ -1,0 +1,28 @@
+{% extends 'pokemon/base.html' %}
+{% load static %}
+
+{% block content %}
+<center>
+  <h1>{{master.name|title}}</h1>
+  <div class="card" style="width: 40rem;">
+    <img src="{% static '/images/master-default.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+
+      <div class="container">
+      {% for pokemon in pokemons %}
+      <div class="card-group">
+  <div class="card">
+    <div class="center-name">
+    <img src="{% static '/images/pokemons/' %}{{pokemon.name}}.png" class="card-img-top" alt="..." style="width: 20%;">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{pokemon.name}}</h5>
+    </div>
+  </div>
+</div>
+      {% endfor %}
+    </div>
+    </div>
+  </div>
+</center>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'pokemon/base.html' %}
+
+{% load static %}
+{% block content %}
+
+<div class="container">
+  <div class="card-group">
+    <div class="card">
+      <img src="{% static '/images/pokemons-home.jpg' %}" class="card-img-top" alt="..." style="width: 100%;">
+      <div class="card-body">
+        <div class="center">
+          <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <a href="{% url 'pokemons-list'  %}" class="btn btn-outline-secondary">Ver Pokemons</a>
+            <a href="{% url 'create-pokemon'  %}" class="btn btn-outline-secondary">Crear Pokemons</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="{% static '/images/master-home.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="center">
+          <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <a href="{% url 'masters-list'  %}" class="btn btn-outline-primary">Ver Entrenadores</a>
+            <a href="{% url 'create-master'  %}" class="btn btn-outline-primary">Crear Entrenadores</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
