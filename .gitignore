@@ -1,0 +1,10 @@
+
+poke_wiki/__pycache__
+pokemon/__pycache__
+pokemon/management/commands/__pycache__
+pokemon/migrations/__pycache__
+pokemon/migrations
+pokemon/templates/pokemon/base-bk.html
+pokemon/templates/pokemon/main4.html
+pokemon/templates/pokemon/main3.html
+pokemon/templates/pokemon/main2.html
