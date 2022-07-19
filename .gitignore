@@ -8,3 +8,5 @@ pokemon/templates/pokemon/base-bk.html
 pokemon/templates/pokemon/main4.html
 pokemon/templates/pokemon/main3.html
 pokemon/templates/pokemon/main2.html
+
+pokemon/templates/pokemon/test.html
