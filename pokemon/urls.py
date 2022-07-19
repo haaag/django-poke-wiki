@@ -9,5 +9,6 @@ urlpatterns = [
     path('masters/', views.masters, name='masters-list'),
     path('master/<master_id>', views.master, name='master-detail'),
     path('add-master', views.add_master, name='create-master'),
-    path('add-pokemon', views.add_pokemon, name='create-pokemon')
+    path('add-pokemon', views.add_pokemon, name='create-pokemon'),
+    path('test', views.otro_view, name='just-testing')
 ]

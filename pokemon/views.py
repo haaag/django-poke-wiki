@@ -1,4 +1,4 @@
-from django.http.response import HttpResponseRedirect
+from django.http.response import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from pokemon.forms import PokemonForm, PokemonMasterForm
 
@@ -17,8 +17,7 @@ def pokemon(request, pokemon_id):
         return render(
             request, "pokemon/pokemon.html", {"pokemon": pokemon, "type": type}
         )
-    else:
-        return render(request, "pokemon/pokemon.html")
+    return render(request, "pokemon/pokemon.html")
 
 
 def pokemons(request):
@@ -39,8 +38,7 @@ def search(request):
         return render(
             request, "pokemon/search.html", {"searched": searched, "pokemons": pokemons}
         )
-    else:
-        return render(request, "pokemon/search.html", {})
+    return render(request, "pokemon/search.html", {})
 
 
 def master(request, master_id):
@@ -81,3 +79,7 @@ def add_pokemon(request):
     return render(
         request, "pokemon/pokemon-create.html", {"form": form, "submitted": submitted}
     )
+
+
+def otro_view(request) -> HttpResponse:
+    return render(request, "pokemon/test.html", {})
